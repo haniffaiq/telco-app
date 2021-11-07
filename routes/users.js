@@ -13,7 +13,7 @@ app.use(express.json())
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   res.send('See all users');
-  req.json({
+  res.json({
     'status': "Succes"
   })
 });
