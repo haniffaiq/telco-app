@@ -13,6 +13,9 @@ app.use(express.json())
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   res.send('See all users');
+  req.json({
+    'status': "Succes"
+  })
 });
 
 router.post('/create', processingNewUsers);
